@@ -1,0 +1,687 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhoutan: L'Éveil Spirituel au Pays du Dragon Tonnerre </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      template: {
+                          sable: '#FFEDD5', 
+                          ocre: '#F97316',   // Orange Vibrant (Brand Accent)
+                          roche: '#0F172A',  // Bleu Nuit (Brand Dark)
+                          ciel: '#0D9488',   // Vert Lagon (Brand Primary)
+                          bg: '#FFF7ED'      // C'est un blanc cassé chaud, parfait pour la lecture et le contraste.
+                      }
+                  },
+                  fontFamily: {
+                      sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Nouvelle police corps
+                      serif: ['"Outfit"', 'sans-serif'],           // Nouvelle police titres
+                  }
+              }
+          }
+      }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* 2. FORÇAGE DES GRAISSES (Comme sur la Landing Page) */
+        .font-sans { font-weight: 600 !important; }
+        .font-serif { font-weight: 800 !important; }
+
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #F97316; /* ocre */
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+    
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">MyTrip<span class="text-template-ocre">Planner</span></a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée à Paro et transfert à Thimphu</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Thimphu: Culture et Spiritualité</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Thimphu: Artisanat et Tradition</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Thimphu - Punakha: Vallée Fertile</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Punakha: Nature et Sérénité</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Punakha - Phobjikha Valley: Vallée des Grues à cou noir</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Phobjikha Valley - Trongsa: Cœur du Bhoutan</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Trongsa - Bumthang (Jakar): Vallée Sacrée</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Bumthang (Jakar): Trésors Spirituels</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Bumthang - Gangtey/Phobjikha: Retour vers l'Ouest</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Gangtey/Phobjikha - Paro: Vers la Vallée Sacrée</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Paro: Le Nid du Tigre</a>
+            
+                <a href="#jour-13" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J13 Paro: Dernières Découvertes</a>
+            
+                <a href="#jour-14" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J14 Paro: Départ</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/mytripplanner-dotfr/Bhutan-nwnfn162893x9m1/main/header.png" || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021'}');">
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.2em] mb-4 uppercase text-xs font-bold">Feuille de Route</p>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">BHUTAN</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">Bhoutan: L'Éveil Spirituel au Pays du Dragon Tonnerre</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🗓️ Du 8 au 22 Février 2026</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">💰 5800€</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🛬 18h depuis Boucher avec escale</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-16 relative">
+      <div class="text-center mb-16">
+            <h2 class="text-template-ocre font-bold tracking-normal text-4xl mt-2 uppercase font-serif">Votre Roadtrip</h2>
+      </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée à Paro et transfert à Thimphu</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Votre aventure bhoutanaise débute par un vol spectaculaire vers Paro, niché au cœur de l'Himalaya. Après les formalités, un transfert pittoresque vous mènera à Thimphu, la capitale unique sans feux de circulation. Prenez le temps de vous installer et de vous imprégner de l'atmosphère sereine de cette ville fascinante, marquant le début d'une immersion culturelle profonde.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛬 <strong>Arrivée à Paro et transfert à Thimphu</strong>: Atterrissage spectaculaire à Paro, suivi d'un trajet pittoresque vers la capitale, Thimphu, offrant les premières vues sur les paysages bhoutanais.</li><li>🚶‍♂️ <strong>Balade légère dans le centre de Thimphu</strong>: Une première exploration douce des rues animées de Thimphu, permettant de s'imprégner de l'atmosphère locale et d'observer la vie quotidienne.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhutan-nwnfn162893x9m1/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ À savoir</p>
+                                <p class="text-gray-700">Le vol vers Paro est réputé pour être l'un des plus beaux au monde, offrant des vues imprenables sur l'Himalaya.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛂 Formalités</p>
+                                <p class="text-gray-700">Le visa doit être obtenu avant le départ via votre tour opérateur bhoutanais. Gardez une copie de votre lettre d'approbation.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Thimphu: Culture et Spiritualité</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui, plongez au cœur de la spiritualité et de la culture bhoutanaise à Thimphu. Vous explorerez des sites emblématiques qui témoignent de la profonde dévotion du peuple et de l'architecture unique du royaume. De l'imposant Bouddha dominant la vallée aux lieux de prière sacrés, chaque étape vous offrira un aperçu de l'âme bhoutanaise. Laissez-vous porter par la quiétude des lieux et la ferveur des fidèles.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🧘‍♀️ <strong>Visite du Buddha Dordenma</strong>: Admirez l'imposante statue de Bouddha dominant la vallée de Thimphu, un lieu de méditation offrant une vue panoramique époustouflante.</li><li>🏯 <strong>Exploration du Mémorial Chorten</strong>: Ce stupa emblématique est un lieu de prière central pour les Bhoutanais, où les fidèles tournent les moulins à prières en signe de dévotion.</li><li>🏛️ <strong>Découverte du Tashichho Dzong</strong>: Imprégnez-vous de l'architecture majestueuse de cette forteresse-monastère, abritant le gouvernement et le corps monastique central du Bhoutan.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhutan-nwnfn162893x9m1/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📸 Photographie</p>
+                                <p class="text-gray-700">Certains lieux sacrés interdisent la photographie à l'intérieur. Respectez toujours les indications et demandez si vous avez un doute.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👗 Tenue vestimentaire</p>
+                                <p class="text-gray-700">Prévoyez des vêtements couvrants (épaules et genoux) pour la visite des dzongs et monastères.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Thimphu: Artisanat et Tradition</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Cette journée est dédiée à la découverte de l'artisanat et des traditions vivantes du Bhoutan. Vous explorerez des lieux où l'héritage culturel est précieusement conservé et transmis. Du musée qui retrace la vie d'antan aux ateliers où les jeunes apprennent les arts ancestraux, chaque visite vous connectera à l'authenticité bhoutanaise. C'est une occasion unique d'apprécier la richesse de leur savoir-faire et leur mode de vie.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🖼️ <strong>Immersion au Musée du Patrimoine Folklorique</strong>: Découvrez la vie rurale bhoutanaise d'antan à travers des expositions authentiques et des démonstrations d'artisanat traditionnel.</li><li>🎨 <strong>Visite de l'Institut Zorig Chusum</strong>: Observez les jeunes artistes bhoutanais perpétuer les 13 arts et métiers traditionnels, de la peinture à la sculpture sur bois.</li><li>🛍️ <strong>Flânerie au marché du week-end (si applicable)</strong>: Plongez dans l'effervescence du marché local, où vous trouverez des produits frais, de l'artisanat et des souvenirs uniques.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhutan-nwnfn162893x9m1/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Souvenirs</p>
+                                <p class="text-gray-700">Le marché et l'institut sont d'excellents endroits pour acheter des souvenirs authentiques et soutenir l'artisanat local.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗣️ Langue</p>
+                                <p class="text-gray-700">Le Dzongkha est la langue officielle, mais l'anglais est largement parlé dans les zones touristiques.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Thimphu - Punakha: Vallée Fertile</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui, vous quitterez la capitale pour vous diriger vers la magnifique vallée de Punakha, une région plus chaude et plus fertile. Le trajet vous mènera à travers le spectaculaire col de Dochula, offrant des vues panoramiques sur l'Himalaya. Vous découvrirez ensuite des sites emblématiques, dont un temple de la fertilité et l'impressionnant dzong de Punakha, témoignant de la richesse historique et spirituelle du Bhoutan.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🏔️ <strong>Arrêt au col de Dochula</strong>: Profitez d'une vue imprenable sur l'Himalaya et admirez les 108 stupas commémoratifs, symboles de paix et de victoire.</li><li>🚶‍♀️ <strong>Randonnée vers Chimi Lhakhang</strong>: Traversez des rizières verdoyantes pour atteindre le "Temple de la Fertilité", célèbre pour ses bénédictions uniques et son histoire fascinante.</li><li>🏯 <strong>Visite du Punakha Dzong</strong>: Explorez cette magnifique forteresse, située à la confluence de deux rivières, réputée pour sa beauté architecturale et son importance historique.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhutan-nwnfn162893x9m1/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌡️ Climat</p>
+                                <p class="text-gray-700">Punakha est à une altitude plus basse que Thimphu, il y fait donc généralement plus doux. Prévoyez des couches de vêtements.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🥾 Chaussures</p>
+                                <p class="text-gray-700">Des chaussures confortables sont recommandées pour la marche vers Chimi Lhakhang.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Punakha: Nature et Sérénité</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Cette journée à Punakha vous invite à explorer la beauté naturelle et la sérénité de la vallée. Vous aurez l'occasion de traverser un impressionnant pont suspendu, offrant des vues spectaculaires sur la rivière et les paysages environnants. Ensuite, une randonnée vous mènera à un chorten majestueux, perché sur une colline, d'où vous pourrez admirer des panoramas à couper le souffle. C'est une journée pour se connecter avec la nature et la spiritualité bhoutanaise.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🌉 <strong>Traversée du pont suspendu de Punakha</strong>: Osez traverser l'un des plus longs ponts suspendus du Bhoutan, offrant des vues spectaculaires sur la rivière et la vallée.</li><li>🏞️ <strong>Randonnée au Khamsum Yulley Namgyal Chorten</strong>: Montez à travers les rizières et les forêts de pins pour atteindre ce chorten majestueux, offrant une vue panoramique sur la vallée de Punakha.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhutan-nwnfn162893x9m1/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💧 Hydratation</p>
+                                <p class="text-gray-700">Pensez à emporter de l'eau, surtout pour la randonnée vers le Khamsum Yulley Namgyal Chorten.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚶‍♀️ Niveau de difficulté</p>
+                                <p class="text-gray-700">La randonnée est de difficulté modérée, avec une montée progressive. Prévoyez environ 1h30 à 2h aller-retour.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Punakha - Phobjikha Valley: Vallée des Grues à cou noir</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui, votre voyage vous mènera à la vaste et magnifique vallée de Phobjikha, une région glaciaire en forme de bol, célèbre pour sa beauté naturelle intacte et son importance écologique. C'est le lieu d'hivernage des rares grues à cou noir. Vous explorerez le monastère de Gangtey, perché sur une colline, et en apprendrez davantage sur ces oiseaux majestueux. Une journée d'immersion dans la nature et la spiritualité bhoutanaise vous attend.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚗 <strong>Trajet vers la vallée de Phobjikha</strong>: Un voyage pittoresque vous mènera à cette vaste vallée glaciaire, célèbre pour sa beauté naturelle et sa faune unique.</li><li>🧘‍♀️ <strong>Visite du monastère de Gangtey</strong>: Explorez ce grand monastère Nyingmapa, perché sur une colline, offrant une vue imprenable sur la vallée et son ambiance paisible.</li><li>🐦 <strong>Observation des grues à cou noir (si saison)</strong>: Au centre d'information, apprenez-en davantage sur ces oiseaux migrateurs rares qui hivernent dans la vallée de novembre à mars.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhutan-nwnfn162893x9m1/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛣️ Route</p>
+                                <p class="text-gray-700">Le trajet vers Phobjikha offre des paysages magnifiques mais peut être sinueux. Prévoyez des pauses si nécessaire.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🔭 Faune</p>
+                                <p class="text-gray-700">Février est encore la saison d'hivernage des grues à cou noir. N'oubliez pas vos jumelles pour les observer.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Phobjikha Valley - Trongsa: Cœur du Bhoutan</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après une matinée paisible dans la vallée de Phobjikha, vous prendrez la route vers Trongsa, une ville stratégiquement située au cœur du Bhoutan. Le trajet vous offrira des vues imprenables sur les paysages montagneux. À Trongsa, vous découvrirez l'impressionnant Trongsa Dzong, la plus grande forteresse du pays, témoin de l'histoire royale et de l'architecture bhoutanaise. C'est une journée riche en découvertes culturelles et historiques.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚶‍♂️ <strong>Randonnée dans la vallée de Phobjikha</strong>: Profitez d'une marche tranquille à travers les paysages ouverts de la vallée, imprégnée de la sérénité de la nature bhoutanaise.</li><li>🏯 <strong>Exploration du Trongsa Dzong</strong>: Découvrez la plus grande forteresse du Bhoutan, un chef-d'œuvre architectural stratégiquement situé, témoin de l'histoire royale du pays.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhutan-nwnfn162893x9m1/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🕰️ Histoire</p>
+                                <p class="text-gray-700">Le Trongsa Dzong a joué un rôle crucial dans l'unification du Bhoutan et est le lieu d'intronisation des rois.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⛰️ Altitude</p>
+                                <p class="text-gray-700">Trongsa est à une altitude similaire à Thimphu (environ 2200m). Les températures peuvent être fraîches en février.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Trongsa - Bumthang (Jakar): Vallée Sacrée</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Votre voyage continue vers l'est, en direction de la vallée de Bumthang, souvent surnommée la "Suisse du Bhoutan" pour ses paysages verdoyants et ses vallées ouvertes. Avant d'arriver, vous explorerez le musée de la tour de guet de Trongsa, offrant un aperçu fascinant de l'histoire royale. Une fois à Jakar, le centre de Bumthang, vous découvrirez le Jakar Dzong, une forteresse imposante qui domine la vallée. Une journée riche en histoire et en beauté naturelle.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🏛️ <strong>Visite du musée de la tour de guet de Trongsa</strong>: Plongez dans l'histoire royale du Bhoutan à travers les expositions fascinantes de cette ancienne tour de guet transformée en musée.</li><li>🚗 <strong>Trajet vers la vallée de Bumthang</strong>: Un voyage à travers des paysages montagneux spectaculaires vous mènera à Bumthang, souvent appelée la "Suisse du Bhoutan" pour sa beauté.</li><li>🏯 <strong>Découverte du Jakar Dzong</strong>: Explorez cette forteresse imposante, signifiant "le fort de l'oiseau blanc", qui domine la vallée de Chokhor et offre une vue magnifique.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhutan-nwnfn162893x9m1/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🏞️ Paysages</p>
+                                <p class="text-gray-700">Le trajet vers Bumthang est l'un des plus pittoresques du Bhoutan, avec des vues sur des forêts de pins et des vallées profondes.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💡 Anecdote</p>
+                                <p class="text-gray-700">Bumthang est considérée comme le cœur spirituel du Bhoutan, abritant de nombreux temples et monastères anciens.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Bumthang (Jakar): Trésors Spirituels</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui, explorez les trésors spirituels de la vallée de Bumthang, une région parsemée de temples et de monastères anciens. Vous visiterez des sites sacrés fondés il y a des siècles, imprégnés de légendes et de dévotion. De Jambay Lhakhang à Kurjey Lhakhang, chaque lieu vous offrira une immersion profonde dans le bouddhisme bhoutanais. C'est une journée pour ressentir la spiritualité et l'histoire qui imprègnent cette vallée sacrée.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🧘‍♀️ <strong>Visite de Jambay Lhakhang</strong>: Ce temple ancien est l'un des plus sacrés du Bhoutan, fondé au 7ème siècle, et est un lieu de pèlerinage important.</li><li>🧘‍♂️ <strong>Exploration de Kurjey Lhakhang</strong>: Découvrez ce complexe de temples où Guru Rinpoche a laissé l'empreinte de son corps dans une grotte, un site d'une grande importance spirituelle.</li><li>🎨 <strong>Découverte de Tamshing Lhakhang</strong>: Admirez les fresques murales anciennes et uniques de ce monastère, fondé par Pema Lingpa, un grand "découvreur de trésors" bhoutanais.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhutan-nwnfn162893x9m1/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📖 Légendes</p>
+                                <p class="text-gray-700">Chaque temple de Bumthang a ses propres légendes et histoires fascinantes, souvent liées à Guru Rinpoche.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚶 Déplacements</p>
+                                <p class="text-gray-700">Les temples sont relativement proches les uns des autres, permettant des déplacements courts et agréables.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Bumthang - Gangtey/Phobjikha: Retour vers l'Ouest</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après avoir exploré les merveilles de Bumthang, il est temps de commencer votre retour vers l'ouest. Cette journée sera principalement consacrée à un long trajet panoramique, vous ramenant à la paisible vallée de Gangtey/Phobjikha. Profitez des paysages changeants qui défilent par la fenêtre, des montagnes majestueuses aux vallées verdoyantes. Une fois arrivé, accordez-vous un moment de détente bien mérité à l'hôtel pour vous ressourcer.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚗 <strong>Long trajet de retour vers Gangtey/Phobjikha</strong>: Profitez des paysages changeants lors de ce long trajet, traversant des cols et des vallées pittoresques.</li><li>🛏️ <strong>Détente à l'hôtel</strong>: Après une journée de route, accordez-vous un moment de repos pour vous ressourcer et profiter de la tranquillité de la vallée.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhutan-nwnfn162893x9m1/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">😴 Confort</p>
+                                <p class="text-gray-700">Prévoyez un coussin de voyage et des collations pour le long trajet en voiture.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛑 Pauses</p>
+                                <p class="text-gray-700">Votre chauffeur fera des arrêts réguliers pour vous permettre de vous dégourdir les jambes et d'admirer les vues.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Gangtey/Phobjikha - Paro: Vers la Vallée Sacrée</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Votre voyage se poursuit vers la vallée de Paro, l'une des régions les plus emblématiques du Bhoutan. Après un autre trajet panoramique, vous découvrirez le majestueux Rinpung Dzong, une forteresse impressionnante qui a servi de décor à des films. Ensuite, le Musée National, logé dans une ancienne tour de guet, vous offrira un aperçu fascinant de l'histoire et de la culture bhoutanaises. Une journée riche en découvertes architecturales et historiques.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🚗 <strong>Retour vers Paro</strong>: Un autre trajet panoramique vous ramène à la vallée de Paro, célèbre pour ses paysages verdoyants et ses sites historiques.</li><li>🏯 <strong>Visite du Rinpung Dzong</strong>: Explorez cette forteresse emblématique, "la forteresse sur un tas de bijoux", qui a servi de décor au film "Little Buddha".</li><li>🏛️ <strong>Découverte du Musée National (Ta Dzong)</strong>: Installé dans une ancienne tour de guet, ce musée abrite une collection impressionnante d'artefacts bhoutanais, d'œuvres d'art et de timbres.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhutan-nwnfn162893x9m1/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎬 Cinéma</p>
+                                <p class="text-gray-700">Le Rinpung Dzong est l'un des dzongs les plus photographiés du Bhoutan, notamment grâce à son apparition dans des films.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🖼️ Musée</p>
+                                <p class="text-gray-700">Le Musée National est une excellente introduction à l'histoire, la religion et la culture du Bhoutan.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Paro: Le Nid du Tigre</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Aujourd'hui est le jour de l'ascension vers le légendaire monastère de Taktsang, plus connu sous le nom de "Nid du Tigre". Accroché à une falaise vertigineuse, ce site emblématique est l'un des plus sacrés du Bhoutan et offre une expérience inoubliable. La randonnée est exigeante mais incroyablement gratifiante, récompensée par des vues spectaculaires et une atmosphère spirituelle unique. Préparez-vous pour une journée mémorable.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>⛰️ <strong>Randonnée au Monastère de Taktsang (Nid du Tigre)</strong>: Embarquez pour une ascension emblématique vers ce monastère légendaire, accroché à une falaise, offrant une expérience spirituelle et des vues inoubliables.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhutan-nwnfn162893x9m1/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🥾 Préparation</p>
+                                <p class="text-gray-700">Prévoyez de bonnes chaussures de marche, de l'eau, des collations et un bâton de randonnée. La montée dure environ 2-3 heures.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🐴 Option</p>
+                                <p class="text-gray-700">Il est possible de monter à cheval jusqu'à la cafétéria à mi-chemin, mais la dernière partie se fait à pied.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🙏 Signification</p>
+                                <p class="text-gray-700">Le Nid du Tigre est un lieu de pèlerinage majeur, où Guru Rinpoche aurait médité au 8ème siècle.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-13" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 13</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Paro: Dernières Découvertes</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Pour votre avant-dernière journée au Bhoutan, explorez les derniers trésors de la vallée de Paro. Vous visiterez Kyichu Lhakhang, l'un des plus anciens et des plus sacrés temples du pays, imprégné d'une profonde spiritualité. L'après-midi sera l'occasion de flâner dans les rues de Paro, de dénicher des souvenirs uniques et de vous imprégner une dernière fois de l'atmosphère paisible de cette vallée. Une journée pour savourer les derniers instants bhoutanais.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🧘‍♀️ <strong>Visite de Kyichu Lhakhang</strong>: Explorez l'un des plus anciens et des plus sacrés temples du Bhoutan, dont la fondation remonte au 7ème siècle, imprégné d'une profonde spiritualité.</li><li>🛍️ <strong>Achats de souvenirs et artisanat local</strong>: Profitez de cette dernière journée pour dénicher des souvenirs uniques, tels que des textiles, des objets en bois ou des thangkas.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhutan-nwnfn162893x9m1/main/jour13.jpg" class="w-full h-64 object-cover" alt="Jour 13">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Artisanat</p>
+                                <p class="text-gray-700">Les boutiques de Paro offrent une belle sélection d'artisanat local, idéal pour des cadeaux authentiques.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💰 Monnaie</p>
+                                <p class="text-gray-700">La monnaie locale est le Ngultrum (BTN), mais la roupie indienne est également acceptée (sauf les billets de 500 et 2000 INR).</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-14" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 14</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Paro: Départ</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après deux semaines d'immersion dans la culture et les paysages époustouflants du Bhoutan, il est temps de dire au revoir à ce royaume himalayen. Profitez d'un dernier petit-déjeuner bhoutanais, puis votre chauffeur vous conduira à l'aéroport international de Paro pour votre vol de retour. Vous partirez avec des souvenirs inoubliables et une profonde appréciation pour la philosophie du Bonheur National Brut. Un voyage qui restera gravé dans votre mémoire.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li>🛫 <strong>Transfert à l'aéroport de Paro et départ</strong>: Profitez d'un dernier petit-déjeuner bhoutanais avant votre transfert vers l'aéroport pour votre vol de retour, emportant des souvenirs inoubliables.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Bhutan-nwnfn162893x9m1/main/jour14.jpg" class="w-full h-64 object-cover" alt="Jour 14">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⏰ Heure de départ</p>
+                                <p class="text-gray-700">Prévoyez d'arriver à l'aéroport au moins 2 heures avant votre vol international.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">✈️ Compagnies aériennes</p>
+                                <p class="text-gray-700">Drukair et Bhutan Airlines sont les seules compagnies à desservir Paro. Les vols peuvent être sujets à des retards dus aux conditions météorologiques.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <section id="pratique" class="bg-white border-t border-gray-200 pt-12 pb-12 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget vol: </strong>1300€/pers (Inclut les vols aller-retour depuis Boucher, France, avec escale.)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget transports: </strong>900€/pers (Véhicule privé avec chauffeur pour tout le séjour.)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget repas: </strong>700€/pers (Trois repas par jour dans des restaurants locaux et hôtels 3 étoiles.)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget logement: </strong>1400€/pers (Hébergement en hôtels 3 étoiles avec petit-déjeuner inclus.)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>Budget activités: </strong>1500€/pers (Inclut le "Sustainable Development Fee" (SDF) et les entrées des sites.)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Les périodes idéales pour ce séjour sont les mois de mars à mai et de septembre à novembre.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Infos pratiques
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">💡 Le Bhoutan est le seul pays au monde à mesurer le Bonheur National Brut (BNB) plutôt que le PIB, reflétant une philosophie unique de développement.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🏞️ Ce royaume himalayen est réputé pour sa culture bouddhiste préservée, ses paysages montagneux spectaculaires et son engagement envers l'environnement.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🚭 Le Bhoutan est le seul pays au monde où la vente de tabac est interdite. Il n'y a pas de feux de circulation dans la capitale, Thimphu.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🛂 Un visa est obligatoire et doit être organisé via un tour opérateur bhoutanais agréé avant le départ. Le "Sustainable Development Fee" (SDF) est inclus dans votre budget activités.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>🔗</span> Liens Utiles
+                </h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://mytripplanner-dotfr.github.io/Bhutan-nwnfn162893x9m1/map.html" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🗺️ Carte Interactive</strong></a></li>
+                    
+                        <li><a href="https://www.bhutan.travel/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>📘 Tourisme Bhoutan</strong></a></li>
+                    
+                        <li><a href="https://www.drukair.com.bt/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>✈️ Drukair</strong></a></li>
+                    
+                        <li><a href="https://www.accuweather.com/fr/bt/bhutan-weather" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🌤️ AccuWeather Bhoutan</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-6">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-serif text-lg text-template-roche mb-2 font-bold">
+                MyTrip<span class="text-template-ocre">Planner</span>
+            </p>
+
+                <div class="flex justify-center gap-4 text-[10px] md:text-xs text-slate-500 mb-4 font-semibold">
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Mentions Légales</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">CGU</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Confidentialité</a>
+                </div>
+
+            <p class="text-[10px] text-gray-400 mb-2">
+                &copy; 2025 MyTripPlanner. Tous droits réservés.
+            </p>
+
+            <div class="flex justify-center">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest px-2 py-0.5 border border-gray-200 rounded-full inline-block">
+                    🤖 Contenu généré par IA
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion Scroll & Menu
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+
+        // Active Link Highlighter
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -60% 0px' });
+
+        document.querySelectorAll('div[id^="jour-"], section#pratique').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
