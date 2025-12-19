@@ -1,0 +1,430 @@
+{
+  "pays": "Bhoutan",
+  "drapeau": "🇧🇹",
+  "symbole": "🐉",
+  "titre": "Bhoutan: L'Éveil Spirituel au Pays du Dragon Tonnerre",
+  "budget_total": "5800€",
+  "duree": "14 jours",
+  "date_debut": "2026-02-08",
+  "date_fin": "2026-02-22",
+  "temps_vol": "18h depuis Boucher avec escale",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée à Paro et transfert à Thimphu",
+      "legende": "Votre aventure bhoutanaise débute par un vol spectaculaire vers Paro, niché au cœur de l'Himalaya. Après les formalités, un transfert pittoresque vous mènera à Thimphu, la capitale unique sans feux de circulation. Prenez le temps de vous installer et de vous imprégner de l'atmosphère sereine de cette ville fascinante, marquant le début d'une immersion culturelle profonde.",
+      "lieu": "Paro / Thimphu",
+      "activites": [
+        "🛬 <strong>Arrivée à Paro et transfert à Thimphu</strong>: Atterrissage spectaculaire à Paro, suivi d'un trajet pittoresque vers la capitale, Thimphu, offrant les premières vues sur les paysages bhoutanais.",
+        "🚶‍♂️ <strong>Balade légère dans le centre de Thimphu</strong>: Une première exploration douce des rues animées de Thimphu, permettant de s'imprégner de l'atmosphère locale et d'observer la vie quotidienne."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "À savoir",
+          "texte": "Le vol vers Paro est réputé pour être l'un des plus beaux au monde, offrant des vues imprenables sur l'Himalaya."
+        },
+        {
+          "symbole": "🛂",
+          "titre": "Formalités",
+          "texte": "Le visa doit être obtenu avant le départ via votre tour opérateur bhoutanais. Gardez une copie de votre lettre d'approbation."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🧘‍♀️",
+      "titre": "Thimphu: Culture et Spiritualité",
+      "legende": "Aujourd'hui, plongez au cœur de la spiritualité et de la culture bhoutanaise à Thimphu. Vous explorerez des sites emblématiques qui témoignent de la profonde dévotion du peuple et de l'architecture unique du royaume. De l'imposant Bouddha dominant la vallée aux lieux de prière sacrés, chaque étape vous offrira un aperçu de l'âme bhoutanaise. Laissez-vous porter par la quiétude des lieux et la ferveur des fidèles.",
+      "lieu": "Thimphu",
+      "activites": [
+        "🧘‍♀️ <strong>Visite du Buddha Dordenma</strong>: Admirez l'imposante statue de Bouddha dominant la vallée de Thimphu, un lieu de méditation offrant une vue panoramique époustouflante.",
+        "🏯 <strong>Exploration du Mémorial Chorten</strong>: Ce stupa emblématique est un lieu de prière central pour les Bhoutanais, où les fidèles tournent les moulins à prières en signe de dévotion.",
+        "🏛️ <strong>Découverte du Tashichho Dzong</strong>: Imprégnez-vous de l'architecture majestueuse de cette forteresse-monastère, abritant le gouvernement et le corps monastique central du Bhoutan."
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "📸",
+          "titre": "Photographie",
+          "texte": "Certains lieux sacrés interdisent la photographie à l'intérieur. Respectez toujours les indications et demandez si vous avez un doute."
+        },
+        {
+          "symbole": "👗",
+          "titre": "Tenue vestimentaire",
+          "texte": "Prévoyez des vêtements couvrants (épaules et genoux) pour la visite des dzongs et monastères."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🎨",
+      "titre": "Thimphu: Artisanat et Tradition",
+      "legende": "Cette journée est dédiée à la découverte de l'artisanat et des traditions vivantes du Bhoutan. Vous explorerez des lieux où l'héritage culturel est précieusement conservé et transmis. Du musée qui retrace la vie d'antan aux ateliers où les jeunes apprennent les arts ancestraux, chaque visite vous connectera à l'authenticité bhoutanaise. C'est une occasion unique d'apprécier la richesse de leur savoir-faire et leur mode de vie.",
+      "lieu": "Thimphu",
+      "activites": [
+        "🖼️ <strong>Immersion au Musée du Patrimoine Folklorique</strong>: Découvrez la vie rurale bhoutanaise d'antan à travers des expositions authentiques et des démonstrations d'artisanat traditionnel.",
+        "🎨 <strong>Visite de l'Institut Zorig Chusum</strong>: Observez les jeunes artistes bhoutanais perpétuer les 13 arts et métiers traditionnels, de la peinture à la sculpture sur bois.",
+        "🛍️ <strong>Flânerie au marché du week-end (si applicable)</strong>: Plongez dans l'effervescence du marché local, où vous trouverez des produits frais, de l'artisanat et des souvenirs uniques."
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Souvenirs",
+          "texte": "Le marché et l'institut sont d'excellents endroits pour acheter des souvenirs authentiques et soutenir l'artisanat local."
+        },
+        {
+          "symbole": "🗣️",
+          "titre": "Langue",
+          "texte": "Le Dzongkha est la langue officielle, mais l'anglais est largement parlé dans les zones touristiques."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🏔️",
+      "titre": "Thimphu - Punakha: Vallée Fertile",
+      "legende": "Aujourd'hui, vous quitterez la capitale pour vous diriger vers la magnifique vallée de Punakha, une région plus chaude et plus fertile. Le trajet vous mènera à travers le spectaculaire col de Dochula, offrant des vues panoramiques sur l'Himalaya. Vous découvrirez ensuite des sites emblématiques, dont un temple de la fertilité et l'impressionnant dzong de Punakha, témoignant de la richesse historique et spirituelle du Bhoutan.",
+      "lieu": "Thimphu / Punakha",
+      "activites": [
+        "🏔️ <strong>Arrêt au col de Dochula</strong>: Profitez d'une vue imprenable sur l'Himalaya et admirez les 108 stupas commémoratifs, symboles de paix et de victoire.",
+        "🚶‍♀️ <strong>Randonnée vers Chimi Lhakhang</strong>: Traversez des rizières verdoyantes pour atteindre le \"Temple de la Fertilité\", célèbre pour ses bénédictions uniques et son histoire fascinante.",
+        "🏯 <strong>Visite du Punakha Dzong</strong>: Explorez cette magnifique forteresse, située à la confluence de deux rivières, réputée pour sa beauté architecturale et son importance historique."
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "🌡️",
+          "titre": "Climat",
+          "texte": "Punakha est à une altitude plus basse que Thimphu, il y fait donc généralement plus doux. Prévoyez des couches de vêtements."
+        },
+        {
+          "symbole": "🥾",
+          "titre": "Chaussures",
+          "texte": "Des chaussures confortables sont recommandées pour la marche vers Chimi Lhakhang."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🏞️",
+      "titre": "Punakha: Nature et Sérénité",
+      "legende": "Cette journée à Punakha vous invite à explorer la beauté naturelle et la sérénité de la vallée. Vous aurez l'occasion de traverser un impressionnant pont suspendu, offrant des vues spectaculaires sur la rivière et les paysages environnants. Ensuite, une randonnée vous mènera à un chorten majestueux, perché sur une colline, d'où vous pourrez admirer des panoramas à couper le souffle. C'est une journée pour se connecter avec la nature et la spiritualité bhoutanaise.",
+      "lieu": "Punakha",
+      "activites": [
+        "🌉 <strong>Traversée du pont suspendu de Punakha</strong>: Osez traverser l'un des plus longs ponts suspendus du Bhoutan, offrant des vues spectaculaires sur la rivière et la vallée.",
+        "🏞️ <strong>Randonnée au Khamsum Yulley Namgyal Chorten</strong>: Montez à travers les rizières et les forêts de pins pour atteindre ce chorten majestueux, offrant une vue panoramique sur la vallée de Punakha."
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "💧",
+          "titre": "Hydratation",
+          "texte": "Pensez à emporter de l'eau, surtout pour la randonnée vers le Khamsum Yulley Namgyal Chorten."
+        },
+        {
+          "symbole": "🚶‍♀️",
+          "titre": "Niveau de difficulté",
+          "texte": "La randonnée est de difficulté modérée, avec une montée progressive. Prévoyez environ 1h30 à 2h aller-retour."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "🐦",
+      "titre": "Punakha - Phobjikha Valley: Vallée des Grues à cou noir",
+      "legende": "Aujourd'hui, votre voyage vous mènera à la vaste et magnifique vallée de Phobjikha, une région glaciaire en forme de bol, célèbre pour sa beauté naturelle intacte et son importance écologique. C'est le lieu d'hivernage des rares grues à cou noir. Vous explorerez le monastère de Gangtey, perché sur une colline, et en apprendrez davantage sur ces oiseaux majestueux. Une journée d'immersion dans la nature et la spiritualité bhoutanaise vous attend.",
+      "lieu": "Punakha / Phobjikha",
+      "activites": [
+        "🚗 <strong>Trajet vers la vallée de Phobjikha</strong>: Un voyage pittoresque vous mènera à cette vaste vallée glaciaire, célèbre pour sa beauté naturelle et sa faune unique.",
+        "🧘‍♀️ <strong>Visite du monastère de Gangtey</strong>: Explorez ce grand monastère Nyingmapa, perché sur une colline, offrant une vue imprenable sur la vallée et son ambiance paisible.",
+        "🐦 <strong>Observation des grues à cou noir (si saison)</strong>: Au centre d'information, apprenez-en davantage sur ces oiseaux migrateurs rares qui hivernent dans la vallée de novembre à mars."
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "🛣️",
+          "titre": "Route",
+          "texte": "Le trajet vers Phobjikha offre des paysages magnifiques mais peut être sinueux. Prévoyez des pauses si nécessaire."
+        },
+        {
+          "symbole": "🔭",
+          "titre": "Faune",
+          "texte": "Février est encore la saison d'hivernage des grues à cou noir. N'oubliez pas vos jumelles pour les observer."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🏰",
+      "titre": "Phobjikha Valley - Trongsa: Cœur du Bhoutan",
+      "legende": "Après une matinée paisible dans la vallée de Phobjikha, vous prendrez la route vers Trongsa, une ville stratégiquement située au cœur du Bhoutan. Le trajet vous offrira des vues imprenables sur les paysages montagneux. À Trongsa, vous découvrirez l'impressionnant Trongsa Dzong, la plus grande forteresse du pays, témoin de l'histoire royale et de l'architecture bhoutanaise. C'est une journée riche en découvertes culturelles et historiques.",
+      "lieu": "Phobjikha / Trongsa",
+      "activites": [
+        "🚶‍♂️ <strong>Randonnée dans la vallée de Phobjikha</strong>: Profitez d'une marche tranquille à travers les paysages ouverts de la vallée, imprégnée de la sérénité de la nature bhoutanaise.",
+        "🏯 <strong>Exploration du Trongsa Dzong</strong>: Découvrez la plus grande forteresse du Bhoutan, un chef-d'œuvre architectural stratégiquement situé, témoin de l'histoire royale du pays."
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "🕰️",
+          "titre": "Histoire",
+          "texte": "Le Trongsa Dzong a joué un rôle crucial dans l'unification du Bhoutan et est le lieu d'intronisation des rois."
+        },
+        {
+          "symbole": "⛰️",
+          "titre": "Altitude",
+          "texte": "Trongsa est à une altitude similaire à Thimphu (environ 2200m). Les températures peuvent être fraîches en février."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "📚",
+      "titre": "Trongsa - Bumthang (Jakar): Vallée Sacrée",
+      "legende": "Votre voyage continue vers l'est, en direction de la vallée de Bumthang, souvent surnommée la \"Suisse du Bhoutan\" pour ses paysages verdoyants et ses vallées ouvertes. Avant d'arriver, vous explorerez le musée de la tour de guet de Trongsa, offrant un aperçu fascinant de l'histoire royale. Une fois à Jakar, le centre de Bumthang, vous découvrirez le Jakar Dzong, une forteresse imposante qui domine la vallée. Une journée riche en histoire et en beauté naturelle.",
+      "lieu": "Trongsa / Bumthang (Jakar)",
+      "activites": [
+        "🏛️ <strong>Visite du musée de la tour de guet de Trongsa</strong>: Plongez dans l'histoire royale du Bhoutan à travers les expositions fascinantes de cette ancienne tour de guet transformée en musée.",
+        "🚗 <strong>Trajet vers la vallée de Bumthang</strong>: Un voyage à travers des paysages montagneux spectaculaires vous mènera à Bumthang, souvent appelée la \"Suisse du Bhoutan\" pour sa beauté.",
+        "🏯 <strong>Découverte du Jakar Dzong</strong>: Explorez cette forteresse imposante, signifiant \"le fort de l'oiseau blanc\", qui domine la vallée de Chokhor et offre une vue magnifique."
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "🏞️",
+          "titre": "Paysages",
+          "texte": "Le trajet vers Bumthang est l'un des plus pittoresques du Bhoutan, avec des vues sur des forêts de pins et des vallées profondes."
+        },
+        {
+          "symbole": "💡",
+          "titre": "Anecdote",
+          "texte": "Bumthang est considérée comme le cœur spirituel du Bhoutan, abritant de nombreux temples et monastères anciens."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🙏",
+      "titre": "Bumthang (Jakar): Trésors Spirituels",
+      "legende": "Aujourd'hui, explorez les trésors spirituels de la vallée de Bumthang, une région parsemée de temples et de monastères anciens. Vous visiterez des sites sacrés fondés il y a des siècles, imprégnés de légendes et de dévotion. De Jambay Lhakhang à Kurjey Lhakhang, chaque lieu vous offrira une immersion profonde dans le bouddhisme bhoutanais. C'est une journée pour ressentir la spiritualité et l'histoire qui imprègnent cette vallée sacrée.",
+      "lieu": "Bumthang (Jakar)",
+      "activites": [
+        "🧘‍♀️ <strong>Visite de Jambay Lhakhang</strong>: Ce temple ancien est l'un des plus sacrés du Bhoutan, fondé au 7ème siècle, et est un lieu de pèlerinage important.",
+        "🧘‍♂️ <strong>Exploration de Kurjey Lhakhang</strong>: Découvrez ce complexe de temples où Guru Rinpoche a laissé l'empreinte de son corps dans une grotte, un site d'une grande importance spirituelle.",
+        "🎨 <strong>Découverte de Tamshing Lhakhang</strong>: Admirez les fresques murales anciennes et uniques de ce monastère, fondé par Pema Lingpa, un grand \"découvreur de trésors\" bhoutanais."
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "📖",
+          "titre": "Légendes",
+          "texte": "Chaque temple de Bumthang a ses propres légendes et histoires fascinantes, souvent liées à Guru Rinpoche."
+        },
+        {
+          "symbole": "🚶",
+          "titre": "Déplacements",
+          "texte": "Les temples sont relativement proches les uns des autres, permettant des déplacements courts et agréables."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "🛣️",
+      "titre": "Bumthang - Gangtey/Phobjikha: Retour vers l'Ouest",
+      "legende": "Après avoir exploré les merveilles de Bumthang, il est temps de commencer votre retour vers l'ouest. Cette journée sera principalement consacrée à un long trajet panoramique, vous ramenant à la paisible vallée de Gangtey/Phobjikha. Profitez des paysages changeants qui défilent par la fenêtre, des montagnes majestueuses aux vallées verdoyantes. Une fois arrivé, accordez-vous un moment de détente bien mérité à l'hôtel pour vous ressourcer.",
+      "lieu": "Bumthang / Gangtey-Phobjikha",
+      "activites": [
+        "🚗 <strong>Long trajet de retour vers Gangtey/Phobjikha</strong>: Profitez des paysages changeants lors de ce long trajet, traversant des cols et des vallées pittoresques.",
+        "🛏️ <strong>Détente à l'hôtel</strong>: Après une journée de route, accordez-vous un moment de repos pour vous ressourcer et profiter de la tranquillité de la vallée."
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "😴",
+          "titre": "Confort",
+          "texte": "Prévoyez un coussin de voyage et des collations pour le long trajet en voiture."
+        },
+        {
+          "symbole": "🛑",
+          "titre": "Pauses",
+          "texte": "Votre chauffeur fera des arrêts réguliers pour vous permettre de vous dégourdir les jambes et d'admirer les vues."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": "🌄",
+      "titre": "Gangtey/Phobjikha - Paro: Vers la Vallée Sacrée",
+      "legende": "Votre voyage se poursuit vers la vallée de Paro, l'une des régions les plus emblématiques du Bhoutan. Après un autre trajet panoramique, vous découvrirez le majestueux Rinpung Dzong, une forteresse impressionnante qui a servi de décor à des films. Ensuite, le Musée National, logé dans une ancienne tour de guet, vous offrira un aperçu fascinant de l'histoire et de la culture bhoutanaises. Une journée riche en découvertes architecturales et historiques.",
+      "lieu": "Gangtey-Phobjikha / Paro",
+      "activites": [
+        "🚗 <strong>Retour vers Paro</strong>: Un autre trajet panoramique vous ramène à la vallée de Paro, célèbre pour ses paysages verdoyants et ses sites historiques.",
+        "🏯 <strong>Visite du Rinpung Dzong</strong>: Explorez cette forteresse emblématique, \"la forteresse sur un tas de bijoux\", qui a servi de décor au film \"Little Buddha\".",
+        "🏛️ <strong>Découverte du Musée National (Ta Dzong)</strong>: Installé dans une ancienne tour de guet, ce musée abrite une collection impressionnante d'artefacts bhoutanais, d'œuvres d'art et de timbres."
+      ],
+      "illustration": "jour11.jpg",
+      "encarts": [
+        {
+          "symbole": "🎬",
+          "titre": "Cinéma",
+          "texte": "Le Rinpung Dzong est l'un des dzongs les plus photographiés du Bhoutan, notamment grâce à son apparition dans des films."
+        },
+        {
+          "symbole": "🖼️",
+          "titre": "Musée",
+          "texte": "Le Musée National est une excellente introduction à l'histoire, la religion et la culture du Bhoutan."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "⛰️",
+      "titre": "Paro: Le Nid du Tigre",
+      "legende": "Aujourd'hui est le jour de l'ascension vers le légendaire monastère de Taktsang, plus connu sous le nom de \"Nid du Tigre\". Accroché à une falaise vertigineuse, ce site emblématique est l'un des plus sacrés du Bhoutan et offre une expérience inoubliable. La randonnée est exigeante mais incroyablement gratifiante, récompensée par des vues spectaculaires et une atmosphère spirituelle unique. Préparez-vous pour une journée mémorable.",
+      "lieu": "Paro",
+      "activites": [
+        "⛰️ <strong>Randonnée au Monastère de Taktsang (Nid du Tigre)</strong>: Embarquez pour une ascension emblématique vers ce monastère légendaire, accroché à une falaise, offrant une expérience spirituelle et des vues inoubliables."
+      ],
+      "illustration": "jour12.jpg",
+      "encarts": [
+        {
+          "symbole": "🥾",
+          "titre": "Préparation",
+          "texte": "Prévoyez de bonnes chaussures de marche, de l'eau, des collations et un bâton de randonnée. La montée dure environ 2-3 heures."
+        },
+        {
+          "symbole": "🐴",
+          "titre": "Option",
+          "texte": "Il est possible de monter à cheval jusqu'à la cafétéria à mi-chemin, mais la dernière partie se fait à pied."
+        },
+        {
+          "symbole": "🙏",
+          "titre": "Signification",
+          "texte": "Le Nid du Tigre est un lieu de pèlerinage majeur, où Guru Rinpoche aurait médité au 8ème siècle."
+        }
+      ]
+    },
+    {
+      "jour": 13,
+      "symbole": "🛍️",
+      "titre": "Paro: Dernières Découvertes",
+      "legende": "Pour votre avant-dernière journée au Bhoutan, explorez les derniers trésors de la vallée de Paro. Vous visiterez Kyichu Lhakhang, l'un des plus anciens et des plus sacrés temples du pays, imprégné d'une profonde spiritualité. L'après-midi sera l'occasion de flâner dans les rues de Paro, de dénicher des souvenirs uniques et de vous imprégner une dernière fois de l'atmosphère paisible de cette vallée. Une journée pour savourer les derniers instants bhoutanais.",
+      "lieu": "Paro",
+      "activites": [
+        "🧘‍♀️ <strong>Visite de Kyichu Lhakhang</strong>: Explorez l'un des plus anciens et des plus sacrés temples du Bhoutan, dont la fondation remonte au 7ème siècle, imprégné d'une profonde spiritualité.",
+        "🛍️ <strong>Achats de souvenirs et artisanat local</strong>: Profitez de cette dernière journée pour dénicher des souvenirs uniques, tels que des textiles, des objets en bois ou des thangkas."
+      ],
+      "illustration": "jour13.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Artisanat",
+          "texte": "Les boutiques de Paro offrent une belle sélection d'artisanat local, idéal pour des cadeaux authentiques."
+        },
+        {
+          "symbole": "💰",
+          "titre": "Monnaie",
+          "texte": "La monnaie locale est le Ngultrum (BTN), mais la roupie indienne est également acceptée (sauf les billets de 500 et 2000 INR)."
+        }
+      ]
+    },
+    {
+      "jour": 14,
+      "symbole": "🛫",
+      "titre": "Paro: Départ",
+      "legende": "Après deux semaines d'immersion dans la culture et les paysages époustouflants du Bhoutan, il est temps de dire au revoir à ce royaume himalayen. Profitez d'un dernier petit-déjeuner bhoutanais, puis votre chauffeur vous conduira à l'aéroport international de Paro pour votre vol de retour. Vous partirez avec des souvenirs inoubliables et une profonde appréciation pour la philosophie du Bonheur National Brut. Un voyage qui restera gravé dans votre mémoire.",
+      "lieu": "Paro",
+      "activites": [
+        "🛫 <strong>Transfert à l'aéroport de Paro et départ</strong>: Profitez d'un dernier petit-déjeuner bhoutanais avant votre transfert vers l'aéroport pour votre vol de retour, emportant des souvenirs inoubliables."
+      ],
+      "illustration": "jour14.jpg",
+      "encarts": [
+        {
+          "symbole": "⏰",
+          "titre": "Heure de départ",
+          "texte": "Prévoyez d'arriver à l'aéroport au moins 2 heures avant votre vol international."
+        },
+        {
+          "symbole": "✈️",
+          "titre": "Compagnies aériennes",
+          "texte": "Drukair et Bhutan Airlines sont les seules compagnies à desservir Paro. Les vols peuvent être sujets à des retards dus aux conditions météorologiques."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    {
+      "titre": "Budget vol:",
+      "legende": "1300€/pers (Inclut les vols aller-retour depuis Boucher, France, avec escale.)",
+      "symbole": "🛬"
+    },
+    {
+      "titre": "Budget transports:",
+      "legende": "900€/pers (Véhicule privé avec chauffeur pour tout le séjour.)",
+      "symbole": "🚆"
+    },
+    {
+      "titre": "Budget repas:",
+      "legende": "700€/pers (Trois repas par jour dans des restaurants locaux et hôtels 3 étoiles.)",
+      "symbole": "🥗"
+    },
+    {
+      "titre": "Budget logement:",
+      "legende": "1400€/pers (Hébergement en hôtels 3 étoiles avec petit-déjeuner inclus.)",
+      "symbole": "🛏️"
+    },
+    {
+      "titre": "Budget activités:",
+      "legende": "1500€/pers (Inclut le \"Sustainable Development Fee\" (SDF) et les entrées des sites.)",
+      "symbole": "🎭"
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Les périodes idéales pour ce séjour sont les mois de mars à mai et de septembre à novembre.",
+      "symbole": "🍁"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "Le Bhoutan est le seul pays au monde à mesurer le Bonheur National Brut (BNB) plutôt que le PIB, reflétant une philosophie unique de développement.",
+      "symbole": "💡"
+    },
+    {
+      "titre": "Ce royaume himalayen est réputé pour sa culture bouddhiste préservée, ses paysages montagneux spectaculaires et son engagement envers l'environnement.",
+      "symbole": "🏞️"
+    },
+    {
+      "titre": "Le Bhoutan est le seul pays au monde où la vente de tabac est interdite. Il n'y a pas de feux de circulation dans la capitale, Thimphu.",
+      "symbole": "🚭"
+    },
+    {
+      "titre": "Un visa est obligatoire et doit être organisé via un tour opérateur bhoutanais agréé avant le départ. Le \"Sustainable Development Fee\" (SDF) est inclus dans votre budget activités.",
+      "symbole": "🛂"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Infos officielles et inspirations",
+      "titre": "Tourisme Bhoutan",
+      "url": "https://www.bhutan.travel/",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Compagnie aérienne nationale",
+      "titre": "Drukair",
+      "url": "https://www.drukair.com.bt/",
+      "symbole": "✈️"
+    },
+    {
+      "legende": "Prévisions météo",
+      "titre": "AccuWeather Bhoutan",
+      "url": "https://www.accuweather.com/fr/bt/bhutan-weather",
+      "symbole": "🌤️"
+    }
+  ]
+}
